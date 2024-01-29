@@ -4,7 +4,7 @@ import { errorhandled } from "../utils/error.js";
 import jwt from "jsonwebtoken";
 
 
-
+//api for signup
 export const signup = async(req,res,next)=>{
     const {username,email,password} = req.body;
 
@@ -32,7 +32,7 @@ export const signup = async(req,res,next)=>{
 
 };
 
-
+//api for signin
 export const signin = async (req, res, next) => {
     const { email, password } = req.body;
   
@@ -67,7 +67,7 @@ export const signin = async (req, res, next) => {
     }
   };
 
-
+//api for continue with google
   export const google = async (req, res, next) => {
     const { email, name, googlePhotoUrl } = req.body;
     try {
