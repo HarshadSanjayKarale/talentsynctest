@@ -66,7 +66,7 @@ export const updateUser = async (req, res, next) => {
 //controller for the delete the account
 
 export const deleteUser = async (req,res,next)=>{
-  if(req.user.id !== req.params.userId)
+  if(!req.user.isAdmin && req.user.id !== req.params.userId)
   {
     return next(errorhandled(403,'You are not allowed to delete this accout'));
   }
@@ -139,6 +139,19 @@ export const getUsers = async (req, res, next) => {
       totalUsers,
       lastMonthUsers,
     });
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const getUser = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.userId);
+    if (!user) {
+      return next(errorhandled(404, 'User not found'));
+    }
+    const { password, ...rest } = user._doc;
+    res.status(200).json(rest);
   } catch (error) {
     next(error);
   }
