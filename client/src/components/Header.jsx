@@ -44,7 +44,7 @@ export default function Header() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const urlParams = new URLSearchParams(location.search);
-    urlParams.set("searchTerm", searchTerm);
+    urlParams.set('searchTerm', searchTerm);
     const searchQuery = urlParams.toString();
     navigate(`/search?${searchQuery}`);
   };
@@ -63,10 +63,12 @@ export default function Header() {
       <form onSubmit={handleSubmit}>
         {/* //for the Search Button */}
         <TextInput
-          type="text-xl"
-          placeholder="Search..."
+          type='text'
+          placeholder='Search...'
           rightIcon={AiOutlineSearch}
-          className="hidden lg:inline"
+          className='hidden lg:inline'
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
 
         <Button className="h-12 w-10 lg:hidden" color="gray" pill>
