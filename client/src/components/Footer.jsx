@@ -20,7 +20,7 @@ export default function FooterCom() {
               className="self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white mb-10"
             >
               <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-                Harshad's
+                Siddhesh's
               </span>
               Blog
             </Link>
@@ -95,7 +95,7 @@ export default function FooterCom() {
         <div className="w-full sm:flex sm:item-center sm:justify-between">
           <Footer.Copyright
             href="#"
-            by="Harshad's Blog"
+            by="Siddhesh's Blog"
             year={new Date().getFullYear()}
           />
           <div
