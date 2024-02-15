@@ -56,7 +56,7 @@ export default function Header() {
   className="self-center flex items-center gap-2 whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
 >
   <img
-    src="public/KavyaMaifil_img.png"
+    src="/KavyaMaifil_img.png"
     alt="AI-generated picture related to pen"
     className="w-10 h-10 rounded-full"
   />
