@@ -80,7 +80,7 @@ export default function Header() {
 
         {/* Toggle button for mobile */}
           <Button
-          className="h-12 w-10 lg:hidden"
+          className="h-8 w-9 lg:hidden mt-1"
           color="gray"
           pill
           onClick={() => dispatch(toggleTheme())}
