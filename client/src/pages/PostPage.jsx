@@ -59,14 +59,14 @@ export default function PostPage() {
     );
   return (
     <main className='p-3 flex flex-col max-w-6xl mx-auto min-h-screen'>
-      <h1 className='text-3xl mt-10 p-3 text-center font-serif max-w-2xl mx-auto lg:text-4xl'>
+      <h1 className='text-2xl mt-10 p-3 text-center font-serif max-w-5xl mx-auto sm:text-5xl '>
         {post && post.title}
       </h1>
       <Link
         to={`/search?category=${post && post.category}`}
         className='self-center mt-5'
       >
-        <Button color='gray' pill size='xs'>
+        <Button color='gray' pill size='xl'>
           {post && post.category}
         </Button>
       </Link>
@@ -82,12 +82,9 @@ export default function PostPage() {
         </span>
       </div>
       <div
-        className='p-3 max-w-5xl mx-auto w-full post-content text-xl mb-10'
+        className='p-3 max-w-5xl mx-auto w-full post-content text-xl mb-10 text-center mt-10'
         dangerouslySetInnerHTML={{ __html: post && post.content }}
       ></div>
-      <div className='max-w-4xl mx-auto w-full'>
-        <CallToAction />
-      </div>
       <CommentSection postId={post._id} />
 
       <div className='flex flex-col justify-center items-center mb-5'>

@@ -52,37 +52,22 @@ export default function Header() {
   return (
     <Navbar className="border-b-2">
       <Link
-  to="/"
-  className="self-center flex items-center gap-2 whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
->
-  <img
-    src="/KavyaMaifil_img.png"
-    alt="AI-generated picture related to pen"
-    className="w-10 h-10 rounded-full"
-  />
-  <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-    Siddhesh's
-  </span>
-  Blogs
-</Link>
-
-      <form onSubmit={handleSubmit}>
-        {/* //for the Search Button */}
-        <TextInput
-          type='text'
-          placeholder='Search...'
-          rightIcon={AiOutlineSearch}
-          className='hidden lg:inline'
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
+        to="/"
+        className="self-center flex items-center gap-2 whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
+      >
+        <img
+          src="/KavyaMaifil_img.png"
+          alt="AI-generated picture related to pen"
+          className="w-10 h-10 rounded-full"
         />
+        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+          Siddhesh's
+        </span>
+        Blogs
+      </Link>
 
-        <Button className="h-12 w-10 lg:hidden" color="gray" pill>
-          <AiOutlineSearch />
-        </Button>
-      </form>
-      {/* //dark and brite mode */}
       <div className="flex gap-2 md:order-2">
+        {/* Dark and Light mode button */}
         <Button
           className="w-12 h-10 hidden sm:inline"
           color="gray"
@@ -91,6 +76,19 @@ export default function Header() {
         >
           {theme === 'light' ? <FaMoon/> : <FaSun/>}
         </Button>
+
+
+        {/* Toggle button for mobile */}
+          <Button
+          className="h-12 w-10 lg:hidden"
+          color="gray"
+          pill
+          onClick={() => dispatch(toggleTheme())}
+        >
+          {theme === 'light' ? <FaMoon/> : <FaSun/>}
+        </Button>
+
+        {/* User profile or sign-in button */}
         {currentUser ? (
           <Dropdown
             arrowIcon={false}
@@ -118,24 +116,40 @@ export default function Header() {
             </Button>
           </Link>
         )}
-        <Navbar.Toggle />
       </div>
+
+
+      <Navbar.Toggle />
+
       <Navbar.Collapse>
+        
+        {/* Navbar links */}
         <Navbar.Link active={path === "/"} as={"div"}>
-          <Link className="text-xl" to="/">
+          <Link className="text-2xl " to="/">
             Home
           </Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/about"} as={"div"}>
-          <Link className="text-xl" to="/about">
+          <Link className="text-2xl" to="/about">
             About
           </Link>
         </Navbar.Link>
-        <Navbar.Link active={path === "/projects"} as={"div"}>
-          <Link className="text-xl" to="/projects">
-            Projects
-          </Link>
-        </Navbar.Link>
+        <form onSubmit={handleSubmit}>
+          {/* Search bar */}
+          <TextInput
+            type='text'
+            placeholder='Search...'
+            rightIcon={AiOutlineSearch}
+            className=' lg:inline'
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+
+          {/* Search button for mobile */}
+          <Button className="h-12 w-10 hidden" color="gray" pill type="submit">
+            <AiOutlineSearch />
+          </Button>
+        </form>
       </Navbar.Collapse>
     </Navbar>
   );

@@ -102,11 +102,16 @@ export default function CreatePost() {
               setFormData({ ...formData, category: e.target.value })
             }
           >
-            <option value='uncategorized'>Select a category</option>
-            <option value='javascript'>JavaScript</option>
-            <option value='reactjs'>React.js</option>
-            <option value='nextjs'>Next.js</option>
-            <option value='ai'>Artificial Intelligent</option>
+          <option value='शृंगार(Romantic)'>शृंगार (Romantic)</option>
+          <option value='हास्य(Humorous)'>हास्य (Humorous)</option>
+          <option value='कारुण्य(Pathetic)'>कारुण्य (Pathetic)</option>
+          <option value='रौद्र(Furious)'>रौद्र (Furious)</option>
+          <option value='वीर(Heroic)'>वीर (Heroic)</option>
+          <option value='बीभत्स(Odious)'>बीभत्स (Odious)</option>
+          <option value='भयानक(Terrifying)'>भयानक (Terrifying)</option>
+          <option value='अद्भुत(Marvelous)'>अद्भुत (Marvelous)</option>
+          <option value='शांत(Peaceful)'>शांत (Peaceful)</option>
+
           </Select>
         </div>
         <div className='flex gap-4 items-center justify-between border-4 border-teal-500 border-dotted p-3'>
@@ -143,6 +148,7 @@ export default function CreatePost() {
             className='w-full h-72 object-cover'
           />
         )}
+        
         <ReactQuill
           theme='snow'
           placeholder='Write something...'

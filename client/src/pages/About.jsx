@@ -1,32 +1,57 @@
+import { FaFacebook, FaTwitter, FaInstagram,FaGithub,FaLinkedin,FaWhatsapp } from 'react-icons/fa';
+
 export default function About() {
   return (
     <div className='min-h-screen flex items-center justify-center'>
       <div className='max-w-2xl mx-auto p-3 text-center'>
         <div>
-          <h1 className='text-3xl font font-semibold text-center my-7'>
-            About Harshad' Blog
+          <h1 className='text-4xl font font-bold text-center my-7'>
+            About Siddhesh's Poetic Corner
           </h1>
-          <div className='text-md text-gray-500 flex flex-col gap-6'>
+          <div className='text-xl text-gray-600 font-blod flex flex-col gap-6'>
             <p>
-              Welcome to Siddhesh's Blog! This blog was created by Harshad Ghavidel
-              as a personal project to share his thoughts and ideas with the
-              world. Harshad is a passionate developer who loves to write about
-              technology, coding, and everything in between.
+              Welcome to Siddhesh's Poetic Corner! This space is dedicated to the
+              artistry of Siddhesh Ghavidel, a poet who pours his soul into words,
+              painting emotions and stories with every verse.
             </p>
 
             <p>
-              On this blog, you'll find weekly articles and tutorials on topics
-              such as web development, software engineering, and programming
-              languages. Harshad is always learning and exploring new
-              technologies, so be sure to check back often for new content!
+              Siddhesh has a passion for both technology and poetry. Alongside his
+              exploration of coding and web development, he also expresses himself
+              through the beautiful language of Marathi poetry.
             </p>
 
             <p>
-              We encourage you to leave comments on our posts and engage with
-              other readers. You can like other people's comments and reply to
-              them as well. We believe that a community of learners can help
-              each other grow and improve.
+              Here, you'll find a collection of Siddhesh's Marathi poems, as well as
+              insights into his creative process and inspirations.
             </p>
+
+            <p>
+              Join us in this journey of words and emotions, and don't forget to
+              connect with Siddhesh on social media platforms for updates and
+              discussions:
+            </p>
+
+            <div className='flex justify-center items-center gap-4'>
+              <a href='#' className='text-red-500 hover:text-red-700'>
+                <FaInstagram size={40} />
+              </a>
+              <a href='#' className='text-blue-500 hover:text-blue-700'>
+                <FaLinkedin size={40} />
+              </a>
+              <a href='#' className='text-green-500 hover:text-green-700'>
+                <FaWhatsapp size={40} />
+              </a>
+              <a href='#' className='text-black-500 hover:text-black-700'>
+                <FaGithub size={40} />
+              </a>
+              <a href='#' className='text-blue-400 hover:text-blue-600'>
+                <FaTwitter size={40} />
+              </a>
+              <a href='#' className='text-blue-500 hover:text-blue-700'>
+                <FaFacebook size={40} />
+              </a>
+            </div>
           </div>
         </div>
       </div>
