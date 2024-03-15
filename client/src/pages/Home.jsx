@@ -20,7 +20,7 @@ export default function Home() {
       <div className="flex flex-col gap-9 p-28 px-3 max-w-6xl mx-auto ">
         <h2 className="text-2xl font-bold lg:text-6xl">
           <img
-            src="/KavyaMaifil_img.png"
+            src="/header.png"
             alt="AI-generated picture related to pen"
             className="rounded-full"
             style={{
@@ -34,8 +34,7 @@ export default function Home() {
           <TypingEffect/>
         </h2>
         <p className="text-gray-500 text-2xl font-semibold sm:text-xl">
-        
-        "आपल्या कवितांचं समृद्ध जग आपल्यासमोर आहे. येथे वाचकांना रसाच्या आनंदात लुटून घेण्याची स्वातंत्र्य आहे. या वेबसाइटवरील कवितांमार्फत आपण साहित्यिक भावनांच्या संग्रहाच्या अनोख्या जगात सहभागी व्हाल. अभिव्यक्तीचं आणि सुंदर भाषांचं या कवितांमार्फत साधारण लोकांना आपल्या कलेचा सानिध्य अनुभवायला मिळेल."
+        TalentSync Hub is a cutting-edge platform seamlessly blending video conferencing with real-time collaborative coding, revolutionizing the interview process. Connect with top talent, conduct dynamic interviews, and evaluate coding skills—all in one place.
         </p>
         <Link
           to="/search"
@@ -48,7 +47,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto p-3 flex flex-col gap-8 py-7">
         {posts && posts.length > 0 && (
           <div className="flex flex-col gap-6">
-            <h2 className="text-4xl font-bold text-center mr-10 mb-10">Recent Posts</h2>
+            <h2 className="text-4xl font-bold text-center mr-10 mb-10">Recent Opportunities</h2>
             <div className="flex flex-wrap gap-20">
               {posts.map((post) => (
                 <PostCard key={post._id} post={post} />

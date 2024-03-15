@@ -58,9 +58,9 @@ export default function SignUp() {
             className="whitespace-nowrap font-bold dark:text-white text-4xl"
           >
             <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-              Siddhesh's
+            Talent
             </span>
-            Blog
+            Sync
           </Link>
           <p className="text-sm mt-5 font-bold">
             This is the demo Project You can Sign UP with Email and Password or

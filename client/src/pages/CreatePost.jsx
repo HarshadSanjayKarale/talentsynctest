@@ -102,15 +102,16 @@ export default function CreatePost() {
               setFormData({ ...formData, category: e.target.value })
             }
           >
-          <option value='शृंगार(Romantic)'>शृंगार (Romantic)</option>
-          <option value='हास्य(Humorous)'>हास्य (Humorous)</option>
-          <option value='कारुण्य(Pathetic)'>कारुण्य (Pathetic)</option>
-          <option value='रौद्र(Furious)'>रौद्र (Furious)</option>
-          <option value='वीर(Heroic)'>वीर (Heroic)</option>
-          <option value='बीभत्स(Odious)'>बीभत्स (Odious)</option>
-          <option value='भयानक(Terrifying)'>भयानक (Terrifying)</option>
-          <option value='अद्भुत(Marvelous)'>अद्भुत (Marvelous)</option>
-          <option value='शांत(Peaceful)'>शांत (Peaceful)</option>
+            <option value="programming_languages">Programming Languages</option>
+            <option value="web_development">Web Development</option>
+            <option value="mobile_development">Mobile Development</option>
+            <option value="database_management">Database Management</option>
+            <option value="cloud_computing">Cloud Computing</option>
+            <option value="devops">DevOps</option>
+            <option value="data_science">Data Science</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="networking">Networking</option>
+            <option value="software_lifecycle">Software Development Lifecycle</option>
 
           </Select>
         </div>

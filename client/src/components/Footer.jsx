@@ -12,7 +12,7 @@ import {
 
 export default function FooterCom() {
   return (
-    <Footer container className="border border-t-8 border-teal-500">
+    <Footer container className="bg-black border border-t-8 border-teal-500">
       <div className="w-full max-w-7xl mx-auto">
         <div className="grid w-full justify-between sm:flex md:grid-cols-1">
           <div className="mt-5 sm:mt-3">
@@ -21,9 +21,9 @@ export default function FooterCom() {
               className="self-center whitespace-nowrap text-lg sm:text-xl font-bold dark:text-white mb-10"
             >
               <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-                Siddhesh's
+                Talent
               </span>
-              Blog
+              Sync
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-8">
@@ -59,15 +59,15 @@ export default function FooterCom() {
                   rel="noopener noreferrer"
                   style={{ fontSize: "16px", fontWeight: 350 }}
                 >
-                  Instagram(@Kavya_Maifil)
+                  Instagram
                 </Footer.Link>
                 <Footer.Link
-                  href="https://www.instagram.com/siddhesh_2406?utm_source=qr&igsh=MXU0YjRqN2Y5dzljMg=="
+                  href="https://www.linkedin.com/in/harshad-karale-21aa1b257/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontSize: "16px", fontWeight: 350 }}
                 >
-                  Instagram(@Siddhesh More)
+                  LinkedIn
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -96,7 +96,7 @@ export default function FooterCom() {
         <div className="w-full sm:flex sm:item-center sm:justify-between">
           <Footer.Copyright
             href="#"
-            by="Siddhesh's Blog"
+            by="TalentSync Team"
             year={new Date().getFullYear()}
             className="text-xl"
           />
@@ -105,17 +105,14 @@ export default function FooterCom() {
             style={{ fontSize: "40px" }}
           >
             <div className='flex justify-center items-center gap-4'>
-              <a href='https://www.instagram.com/kavya__maifil?utm_source=qr&igsh=MTZ0c2toa2htaTJ4MA==' className='text-red-500 hover:text-red-700'>
+              <a href='#' className='text-red-500 hover:text-red-700'>
                 <FaInstagram size={40} />
               </a>
-              <a href='https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADElDgsBOkUxT49dazt4I6qwFTVoAu4b0zk&keywords=siddhesh%20more&origin=RICH_QUERY_SUGGESTION&position=0&searchId=0f571b1d-fdc6-48ca-ac82-53e8943ab976&sid=ba%2C&spellCorrectionEnabled=false' className='text-blue-500 hover:text-blue-700'>
+              <a href='https://www.linkedin.com/in/harshad-karale-21aa1b257/'>
                 <FaLinkedin size={40} />
               </a>
               <a href='#' className='text-green-500 hover:text-green-700'>
                 <FaWhatsapp size={40} />
-              </a>
-              <a href='https://www.instagram.com/siddhesh_2406?utm_source=qr&igsh=MXU0YjRqN2Y5dzljMg==' className='text-orenge-500 hover:text-red-700'>
-                <FaInstagram size={40} />
               </a>
               <a href='#' className='text-black-500 hover:text-black-700'>
                 <FaGithub size={40} />

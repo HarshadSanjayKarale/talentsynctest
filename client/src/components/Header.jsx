@@ -56,14 +56,14 @@ export default function Header() {
         className="self-center flex items-center gap-2 whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         <img
-          src="/KavyaMaifil_img.png"
+          src="/header.png"
           alt="AI-generated picture related to pen"
           className="w-10 h-10 rounded-full"
         />
         <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-          Siddhesh's
+        TalentSync
         </span>
-        Blogs
+        
       </Link>
 
       <div className="flex gap-2 md:order-2">
