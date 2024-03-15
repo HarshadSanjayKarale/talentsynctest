@@ -19,6 +19,7 @@ import UpdatePost from './pages/UpdatePost';
 import PostPage from './pages/PostPage';
 import ScrollToTop from './components/ScrollToTop';
 import Search from './pages/Search';
+import ApplicationForm from './components/ApplicationForm';
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
         </Route>
         <Route path='/projects' element={<Projects/>}></Route>
         <Route path='/post/:postSlug' element={<PostPage/>}></Route>
+        <Route path='/application' element={<ApplicationForm/>}></Route>
       </Routes>
       <Footer/>
       </div>
