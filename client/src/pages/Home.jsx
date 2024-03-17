@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import PostCard from "../components/PostCard";
 import TypingEffect from "../components/TypingEffect";
 
+
 export default function Home() {
   const [posts, setPosts] = useState([]);
 

@@ -1,6 +1,7 @@
 // Import necessary modules
 import React, { useState } from 'react';
 
+
 // Define the ApplicationForm component
 const ApplicationForm = () => {
   // State for form data
@@ -29,16 +30,25 @@ const ApplicationForm = () => {
   };
 
   // Handle form submission
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
     e.preventDefault();
+    const userId = '65f324f4f4717204489c8d6f'; 
+    const postId = '65f43dcd5543e4c6fcab6995'; 
+  
+    const formDataWithIds = {
+      ...formData,
+      userId,
+      postId
+    };
+  
+    const formDataToSend = new FormData();
+    for (const key in formDataWithIds) {
+      formDataToSend.append(key, formDataWithIds[key]);
+    }
 
+    console.log(formDataToSend);
+  
     try {
-      const formDataToSend = new FormData();
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('phone', formData.phone);
-      formDataToSend.append('resume', formData.resume);
-
       const response = await fetch('/api/application/apply', {
         method: 'POST',
         body: formDataToSend
@@ -61,6 +71,7 @@ const ApplicationForm = () => {
       alert('Failed to submit application');
     }
   };
+  
 
   // Return the JSX for the form
   return (
@@ -131,6 +142,7 @@ const ApplicationForm = () => {
           </button>
         </form>
       </main>
+
     </div>
   );
 };
