@@ -22,7 +22,7 @@ const postSchema = new mongoose.Schema(
     },
     category: {
       type: String,
-      default: 'शृंगार(Romantic)',
+      default: 'Web Devloper',
     },
     slug: {
       type: String,

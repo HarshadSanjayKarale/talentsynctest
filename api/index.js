@@ -5,10 +5,9 @@ import userRoutes from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
 import postRouter from './routes/post.route.js';
 import commentRouter from './routes/comment.route.js';
-import applicationRouter from './routes/application.route.js'; 
-import cors from "cors"
 import cookieParser from "cookie-parser";
 import path from 'path';
+import applicationRoutes from './routes/application.route.js'; 
 
 dotenv.config();
 
@@ -27,7 +26,6 @@ mongoose.connect(
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 app.use(cookieParser());
 
 
@@ -40,7 +38,6 @@ app.use('/api/user',userRoutes);
 app.use('/api/auth',authRouter);
 app.use('/api/post',postRouter);
 app.use('/api/comment',commentRouter);
-app.use('/api/application', applicationRouter);
 
 app.use(express.static(path.join(__dirname,'/client/dist')));
 
@@ -58,3 +55,10 @@ app.use((err,req,res,next)=>{
         message
     })
 })
+
+
+
+// app.use('/api', applicationRoutes);
+
+const PORT = process.env.PORT || 5000;
+

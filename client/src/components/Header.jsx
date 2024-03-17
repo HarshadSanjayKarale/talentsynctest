@@ -56,11 +56,11 @@ export default function Header() {
         className="self-center flex items-center gap-2 whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         <img
-          src="/header.png"
-          alt="AI-generated picture related to pen"
-          className="w-10 h-10 rounded-full"
+          src="/logo.png"
+          alt="logo"
+          className="w-10 h-10 "
         />
-        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+        <span className="px-2 py-1 text-white">
         TalentSync
         </span>
         
@@ -125,31 +125,15 @@ export default function Header() {
         
         {/* Navbar links */}
         <Navbar.Link active={path === "/"} as={"div"}>
-          <Link className="text-2xl " to="/">
+          <Link className="text-4x1 " to="/">
             Home
           </Link>
         </Navbar.Link>
         <Navbar.Link active={path === "/about"} as={"div"}>
-          <Link className="text-2xl" to="/about">
+          <Link className="text-4x1" to="/about">
             About
           </Link>
         </Navbar.Link>
-        <form onSubmit={handleSubmit}>
-          {/* Search bar */}
-          <TextInput
-            type='text'
-            placeholder='Search...'
-            rightIcon={AiOutlineSearch}
-            className=' lg:inline'
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-
-          {/* Search button for mobile */}
-          <Button className="h-12 w-10 hidden" color="gray" pill type="submit">
-            <AiOutlineSearch />
-          </Button>
-        </form>
       </Navbar.Collapse>
     </Navbar>
   );

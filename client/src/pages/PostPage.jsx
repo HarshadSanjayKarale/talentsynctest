@@ -83,7 +83,7 @@ export default function PostPage() {
         </span>
       </div>
       <div
-        className="p-3 max-w-5xl mx-auto w-full post-content text-xl mb-10 text-center mt-10"
+        className="p-3 max-w-5xl mx-auto w-full post-content text-xl mb-10  mt-10"
         dangerouslySetInnerHTML={{ __html: post && post.content }}
       ></div>
       <div className="applybutton flex justify-center">

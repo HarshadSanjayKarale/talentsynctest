@@ -20,9 +20,8 @@ export default function Home() {
       <div className="flex flex-col gap-9 p-28 px-3 max-w-6xl mx-auto ">
         <h2 className="text-2xl font-bold lg:text-6xl">
           <img
-            src="/header.png"
+            src="/logo.png"
             alt="AI-generated picture related to pen"
-            className="rounded-full"
             style={{
               maxWidth: '100%', // Ensure the image doesn't exceed its container width
               height: 'auto', // Maintain aspect ratio
@@ -33,12 +32,12 @@ export default function Home() {
           />
           <TypingEffect/>
         </h2>
-        <p className="text-gray-500 text-2xl font-semibold sm:text-xl">
+        <p className="text-gray-500 text-2xl  sm:text-xl">
         TalentSync Hub is a cutting-edge platform seamlessly blending video conferencing with real-time collaborative coding, revolutionizing the interview process. Connect with top talent, conduct dynamic interviews, and evaluate coding skills—all in one place.
         </p>
         <Link
           to="/search"
-          className="text-lg sm:text-xl text-teal-500 font-bold hover:underline"
+          className="text-lg sm:text-xl text-teal-500 hover:underline"
         >
           View all posts
         </Link>

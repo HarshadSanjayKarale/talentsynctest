@@ -20,7 +20,7 @@ export default function FooterCom() {
               to="/"
               className="self-center whitespace-nowrap text-lg sm:text-xl font-bold dark:text-white mb-10"
             >
-              <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+              <span className="px-2 py-1 text-white">
                 Talent
               </span>
               Sync
@@ -54,7 +54,7 @@ export default function FooterCom() {
               <Footer.Title title="Follow Us" style={{ fontSize: "18px" }} />
               <Footer.LinkGroup col>
                 <Footer.Link
-                  href="https://www.instagram.com/kavya__maifil?utm_source=qr&igsh=MTZ0c2toa2htaTJ4MA=="
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ fontSize: "16px", fontWeight: 350 }}
@@ -105,23 +105,23 @@ export default function FooterCom() {
             style={{ fontSize: "40px" }}
           >
             <div className='flex justify-center items-center gap-4'>
-              <a href='#' className='text-red-500 hover:text-red-700'>
-                <FaInstagram size={40} />
+              <a href='#' className='hover:text-red-700'>
+                <FaInstagram size={30} />
               </a>
               <a href='https://www.linkedin.com/in/harshad-karale-21aa1b257/'>
-                <FaLinkedin size={40} />
+                <FaLinkedin size={30} />
               </a>
-              <a href='#' className='text-green-500 hover:text-green-700'>
-                <FaWhatsapp size={40} />
+              <a href='#' className='hover:text-green-700'>
+                <FaWhatsapp size={30} />
               </a>
-              <a href='#' className='text-black-500 hover:text-black-700'>
-                <FaGithub size={40} />
+              <a href='#' className='hover:text-black-700'>
+                <FaGithub size={30} />
               </a>
-              <a href='#' className='text-blue-400 hover:text-blue-600'>
-                <FaTwitter size={40} />
+              <a href='#' className='hover:text-blue-600'>
+                <FaTwitter size={30} />
               </a>
-              <a href='#' className='text-blue-500 hover:text-blue-700'>
-                <FaFacebook size={40} />
+              <a href='#' className='hover:text-blue-700'>
+                <FaFacebook size={30} />
               </a>
             </div>
           </div>
